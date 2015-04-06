@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="MyAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="580.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Pane layoutX="304.0" layoutY="304.0" prefWidth="100.0" />
+    <Label layoutX="14.0" layoutY="266.0" text="X:" />
+    <TextField id="cor" fx:id="coorX" layoutX="10.0" layoutY="282.0" prefWidth="59.0" />
+    <Label layoutX="14.0" layoutY="306.0" text="Y:" />
+    <Pane id="" fx:id="shPane" layoutX="104.0" layoutY="0.0" prefHeight="535.0" prefWidth="476.0" />
+    <Button fx:id="btnDraw" layoutX="14.0" layoutY="457.0" mnemonicParsing="false" mouseTransparent="false" prefHeight="37.0" prefWidth="59.0" text="Draw" />
+    <RadioButton fx:id="shPoint" layoutX="19.0" layoutY="37.0" mnemonicParsing="false" selected="true" text="Point">
+      <toggleGroup>
+        <ToggleGroup fx:id="groupOfShapes" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="shLine" layoutX="19.0" layoutY="70.0" mnemonicParsing="false" text="Line" toggleGroup="$groupOfShapes" />
+    <RadioButton fx:id="shOval" layoutX="19.0" layoutY="103.0" mnemonicParsing="false" text="Oval" toggleGroup="$groupOfShapes" />
+    <RadioButton fx:id="shTriangle" layoutX="19.0" layoutY="136.0" mnemonicParsing="false" text="Triangle" toggleGroup="$groupOfShapes" />
+    <RadioButton fx:id="shRectangle" layoutX="19.0" layoutY="167.0" mnemonicParsing="false" text="Rectangle" />
+    <TextField fx:id="coorY" layoutX="11.0" layoutY="322.0" prefWidth="59.0" />
+    <TextField fx:id="shHeight" layoutX="14.0" layoutY="401.0" prefWidth="59.0" />
+    <TextField id="sh" fx:id="shWidth" layoutX="13.0" layoutY="363.0" prefWidth="59.0" />
+    <Label id="sh" layoutX="13.0" layoutY="347.0" prefWidth="59.0" text="Width:" />
+    <Label layoutX="14.0" layoutY="385.0" prefWidth="59.0" text="Height:" />
+  </children>
+</AnchorPane>
